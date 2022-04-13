@@ -13,7 +13,7 @@ public final class Fraction extends Number implements Comparable<Fraction> {
 
     private final long numerator;
     private final long denominator;
-
+    private long nothinginator;
 
     /**
      * Represents the whole number as the fraction
