@@ -1,0 +1,27 @@
+package com.company.practice;
+
+public class LeapYearCalculator {
+
+
+    public static boolean isLeapYear(int year) {
+
+        // Invalid options (if in range)
+        if (year >= 1 && year <= 9999) {
+            if (year % 4 == 0) {
+                if (year % 100 == 0) {
+                    if (year % 400 == 0) {
+                        return true;
+                    } else {
+                        return false;
+                    }
+                }
+                return true;
+            }
+            return false;
+
+        }
+        return false;
+
+
+    }
+}
